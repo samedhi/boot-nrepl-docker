@@ -8,4 +8,5 @@ ADD boot.properties boot.properties
 ADD build.boot build.boot
 ADD src src
 ENV BOOT_AS_ROOT yes
+RUN boot deps
 CMD ["boot", "repl"]
