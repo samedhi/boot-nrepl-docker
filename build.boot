@@ -9,6 +9,6 @@
  pom    {:project 'boot-nrepl-docker
          :version "0.1.0"}
  repl   {:port 6800,
-         :host "0.0.0.0"})
+         :bind "0.0.0.0"})
 
 (deftask deps [] (repl :server true))
